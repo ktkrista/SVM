@@ -9,7 +9,6 @@ seed(1)
 
 # ====================================
 # STEP 1: read the training and testing data.
-# Do not change any code of this step.
 
 # specify path to training data and testing data
 train_x_location = "x_train16.csv"
@@ -48,10 +47,7 @@ print(m_test, "test examples.")
 
 # ====================================
 # STEP 2: pre  processing
-# Please  modify  the  code in this  step.
 print("Pre processing data")
-# you can skip this step, use your own pre processing ideas,
-# or use anything from sklearn.preprocessing
 
 # The same pre processing must be applied to both training and testing data
 scaler = preprocessing.StandardScaler()
