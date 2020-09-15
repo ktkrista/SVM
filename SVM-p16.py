@@ -9,7 +9,6 @@ seed(1)
 
 # ====================================
 # STEP 1: read the training and testing data.
-# Do not change any code of this step.
 
 # specify path to training data and testing data
 train_x_location = "x_train16.csv"
@@ -48,10 +47,7 @@ print(m_test, "test examples.")
 
 # ====================================
 # STEP 2: pre  processing
-# Please  modify  the  code in this  step.
 print("Pre processing data")
-# you can skip this step, use your own pre processing ideas,
-# or use anything from sklearn.preprocessing
 
 # The same pre processing must be applied to both training and testing data
 scaler = preprocessing.StandardScaler()
@@ -62,7 +58,6 @@ x_test = scaler.transform(x_test)
 
 # ====================================
 # STEP 3: train model.
-# Please modify the code in this step.
 
 print("---train")
 params = {'kernel': ['poly'],
@@ -78,7 +73,6 @@ model.fit(x_train, y_train)
 
 # ====================================
 # STEP3: evaluate  model
-# Don’t modify the code below.
 
 print("---evaluate")
 print("number of support vectors:", model.n_support_)
